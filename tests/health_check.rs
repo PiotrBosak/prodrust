@@ -1,8 +1,4 @@
-use std::{fmt::format, net::TcpListener};
-
-use actix_web::dev::Server;
-use sqlx::{Connection, PgConnection};
-use zerotoprod::{configuration::get_configuration, startup::run};
+use std::net::TcpListener;
 
 #[actix_rt::test]
 async fn health_check_test() {
